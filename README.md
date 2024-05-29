@@ -8,7 +8,7 @@ Pour ce test technique, on cherche à générer une image carrée de 2km de côt
 
 Pour ce test, j'ai utilisé GDAL (installé à partir d'un fichier wheel présent dans le répôt) pour la lecture des images GeoTiff, j'ai utilisé numpy pour traiter les tableau et le module pyplot de matplotlib pour afficher les images. J'utilise aussi le module math pour divers calculs.
 
-#Versions utilsées   
+# Versions utilsées   
 Python 3.10.7   
 GDAL 3.8.4   
 numpy 1.23.3   
