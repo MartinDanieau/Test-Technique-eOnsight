@@ -15,7 +15,7 @@ numpy 1.23.3
 matplotlib 3.6.0   
 
 
-### Principe
+## Principe
 
 Le fichier main.py contient la fonction generation_carre(ville) qui prend en argument une chaîne de caractères indiquant quel pont est le sujet de la fonction. Si la chaîne de caractère désigne un pont qui ne se trouve pas dans la base de donnée, la fonction renvoie "Sujet non-inclue dans la base de donnée" et s'arrête. Sinon, elle lit les bandes B02, B03 et B04 correspondantes, repère la zone à isoler et extrait les valeurs des différentes bandes en tant qu'array sur cette zone. Les composantes sont ensuite normalisées et la fonction étale leur histogramme de manière à obtenir un bon contraste. Enfin, la fonction crée l'image en couleur en réunissant les 3 composantes puis l'affiche.
 
