@@ -10,8 +10,11 @@ Pour ce test, j'ai utilisé GDAL (installé à partir d'un fichier wheel présen
 
 *Versions utilsées*
 Python 3.10.7
+
 GDAL 3.8.4
+
 numpy 1.23.3
+
 matplotlib 3.6.0
 
 
