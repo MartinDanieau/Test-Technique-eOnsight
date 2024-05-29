@@ -1,6 +1,6 @@
 ***Test Technique pour eOnsight***
 
-Bienvenue sur ce répôt git !
+Bienvenue sur ce repo git !
 
 Pour ce test technique, on cherche à générer une image carrée de 2km de côté, centré sur le viaduc Gênes-Saint-Georges, avec un bon niveau de contraste (qui peut s'apparenter à une image "True Color"), en se basant sur les images "Raw" produites par Sentinel-2. Pour aller plus loin, je suis allé chercher les images "Raw" incluant le viaduc de Millau et le Golden Gate Bridge sur https://apps.sentinel-hub.com/eo-browser/ et j'ai autonatisé le processus pour qu'il puisse s'appliquer de la même manière pour les 3 ponts.
 
