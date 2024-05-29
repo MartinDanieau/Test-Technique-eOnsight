@@ -1,24 +1,21 @@
-***Test Technique pour eOnsight***
+###Test Technique pour eOnsight
 
 Bienvenue sur ce repo git !
 
 Pour ce test technique, on cherche à générer une image carrée de 2km de côté, centré sur le viaduc Gênes-Saint-Georges, avec un bon niveau de contraste (qui peut s'apparenter à une image "True Color"), en se basant sur les images "Raw" produites par Sentinel-2. Pour aller plus loin, je suis allé chercher les images "Raw" incluant le viaduc de Millau et le Golden Gate Bridge sur https://apps.sentinel-hub.com/eo-browser/ et j'ai autonatisé le processus pour qu'il puisse s'appliquer de la même manière pour les 3 ponts.
 
-**Bibliothèques et modules utilisés**
+##Bibliothèques et modules utilisés
 
 Pour ce test, j'ai utilisé GDAL (installé à partir d'un fichier wheel présent dans le répôt) pour la lecture des images GeoTiff, j'ai utilisé numpy pour traiter les tableau et le module pyplot de matplotlib pour afficher les images. J'utilise aussi le module math pour divers calculs.
 
-*Versions utilsées*
-Python 3.10.7
-
-GDAL 3.8.4
-
-numpy 1.23.3
-
-matplotlib 3.6.0
+#Versions utilsées   
+Python 3.10.7   
+GDAL 3.8.4   
+numpy 1.23.3   
+matplotlib 3.6.0   
 
 
-**Principe**
+#Principe
 
 Le fichier main.py contient la fonction generation_carre(ville) qui prend en argument une chaîne de caractères indiquant quel pont est le sujet de la fonction. Si la chaîne de caractère désigne un pont qui ne se trouve pas dans la base de donnée, la fonction renvoie "Sujet non-inclue dans la base de donnée" et s'arrête. Sinon, elle lit les bandes B02, B03 et B04 correspondantes, repère la zone à isoler et extrait les valeurs des différentes bandes en tant qu'array sur cette zone. Les composantes sont ensuite normalisées et la fonction étale leur histogramme de manière à obtenir un bon contraste. Enfin, la fonction crée l'image en couleur en réunissant les 3 composantes puis l'affiche.
 
